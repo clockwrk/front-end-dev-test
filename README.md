@@ -1,66 +1,89 @@
-# front-end-dev-test
+# angularjs-webpack
 
-## Intro
+[![Dependency Status](https://david-dm.org/preboot/angularjs-webpack/status.svg)](https://david-dm.org/preboot/angular-webpack#info=dependencies) [![devDependency Status](https://david-dm.org/preboot/angularjs-webpack/dev-status.svg)](https://david-dm.org/preboot/angularjs-webpack#info=devDependencies)
 
-Congratulations on making it to the testing phase of the hiring process! For this part of the hiring process, we would like to learn about your creativity, how well you code, and how well you follow instructions.
+A complete, yet simple, starter for AngularJS using Webpack.
 
-You will need to have knowledge of some key things before you start:
-  - how to run a local server and
-  - how to connect your markup to your scripts and styles
-  - front end web development
+This workflow serves as a starting point for building AngularJS (1.x) applications using Webpack 2.x. Should be noted that apart from the pre-installed angular package, this workflow is pretty much generic.
 
-For this project, we have supplied a server and some development dependencies feel free to use any (you can find these in the package json). You do not have to run the local server but feel free to use it, we have configured a simple one for you. Commands are pretty simple, if you choose to use our server we supplied you can use the commands below in your terminal:
+* Heavily commented webpack configuration with reasonable defaults.
+* ES6, and ES7 support with babel.
+* Source maps included in all builds.
+* Development server with live reload.
+* Production builds with cache busting.
+* Testing environment using karma to run tests and jasmine as the framework.
+* Code coverage when tests are run.
+* No gulp and no grunt, just npm scripts.
 
-<pre>
-  npm install
-  npm start
-</pre>
+>Warning: Make sure you're using the latest version of Node.js and NPM
 
-<em>NOTE: You will need node and npm on your machine if you choose to use the supplied server, also for hosting you will need to set it up yourself.</em>
+### Quick start
 
-## Instructions
+> Clone/Download the repo then edit `app.js` inside [`/src/app/app.js`](/src/app/app.js)
 
-The goal of this project is to create a client website that has some key features requested by the client (i.e. Rooster Grin as the client). Since we are a dev shop that primarily works in the healthcare/orthodontic industry, we would like the focus of the project to be based on orthodontic features.
+```bash
+# clone our repo
+$ git clone https://github.com/preboot/angularjs-webpack.git my-app
 
-Please clone this repo and submit a link to the new project's repo along with any instructions for viewing the final product. It is not required to host this project anywhere, but it would be nice to view your project via a link rather than having to run the build locally.
+# change directory to your app
+$ cd my-app
 
-Your wireframes and the assets can be found here: https://www.dropbox.com/sh/h1wfw44z5hsodk1/AABlezEmPRIWB2lKLJhm8Wu-a?dl=0
+# install the dependencies with npm
+$ npm install
 
-## Requirements
+# start the server
+$ npm start
+```
 
-<em>Please read through ALL the requirements before starting your project</em>
+go to [http://localhost:8080](http://localhost:8080) in your browser.
 
-<strong>Below are the design requirements:</strong>
+# Table of Contents
 
-  1. Full width slider with 3 images
-  2. Fixed / sticky buttons
-  3. Mockups are followed
+* [Getting Started](#getting-started)
+    * [Dependencies](#dependencies)
+    * [Installing](#installing)
+    * [Running the app](#running-the-app)
+    * [Developing](#developing)
+    * [Testing](#testing)
+* [License](#license)
 
-We would like you to use any color schemes. Feel free to add as may animations you would like and any sized image you feel best. You also have some design freedoms to create / use any of the assets provided. Feel free to use any stock images as well. We would also like you to be as creative as you would like. We usually face a lot of ambiguity when developing and designing for our clients.
+# Getting Started
 
-<strong>Below are the technical requirements:</strong>
+## Dependencies
 
-  1. Modular and concise code
-  2. Fully functional capabilities of built features
-      - We should not be seeing errors when we click on buttons
-  3. Understanding best practices of web development
-      - Naming conventions and styling
-  4. Best use of images and assets
-  5. Use of a grid system
-  6. Responsive
+What you need to run this app:
+* `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
+* Ensure you're running Node (`v4.1.x`+) and NPM (`2.14.x`+)
 
-As for the technology that you should use its up to you. 😎
+## Installing
 
-### Required Features:
+* `fork` this repo
+* `clone` your fork
+* `npm install` to install all dependencies
 
-These required features are some problems that you would face when building a client project and would need to be implemented.
+## Running the app
 
-  1. Fade In Effect or Slide in effect for checkerboard section
-  2. Subtle animation on the percent numbers
-  3. Fully Functional Site
+After you have installed all dependencies you can now run the app with:
+```bash
+npm start
+```
 
-### Optional Features:
-  1. Use of dev server
-  2. Front end framework
-  3. Animations
-  4. Dynamic backend from a CMS
+It will start a local server using `webpack-dev-server` which will watch, build (in-memory), and reload for you. The port will be displayed to you as `http://localhost:8080`.
+
+## Developing
+
+### Build files
+
+* single run: `npm run build`
+* build files and watch: `npm start`
+
+## Testing
+
+#### 1. Unit Tests
+
+* single run: `npm test`
+* live mode (TDD style): `npm run test-watch`
+
+# License
+
+[MIT](/LICENSE)

@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#top {
+  background:#1676DD;
+  height: 60px;
+}
+
+#slide {
+  height:550px;
+}
+
+#slanted {
+
+}
+
+#percentages {
+
+}
+
+#images {
+
+}
+
+
+
+
+/*<section id="top-section">top section
+<section>
+<section id="slide">slideview
+<section>
+<section id="slanted">slanted
+</section>
+<section id="percentages"> percentages
+</section>
+<section id="images">
+</section>*/
