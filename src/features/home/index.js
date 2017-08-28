@@ -11,9 +11,10 @@ import description from '../../directives/description.directive';
 import pages from '../../directives/pages.directive';
 import percent from '../../directives/percent.directive';
 import slide from '../../directives/slide.directive';
+import carousel from '../../directives/carousel.directive';
 
 
-export default angular.module('app.home', [uirouter, randomNames, greeting, description, pages, percent, slide])
+export default angular.module('app.home', [uirouter, randomNames, greeting, description, pages, percent, slide, carousel])
         .config(routing)
         .controller('HomeController', HomeController)
         .name
